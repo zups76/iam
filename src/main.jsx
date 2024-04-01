@@ -42,10 +42,10 @@ const store = configureStore({
     }),
 })
 
-let persistor = persistStore(store)
+const persistor = persistStore(store)
 
 
-// console.log('-----', store)
+// console.log('-1-1-1-1-', store)
 // console.log('-----', store.getState())
 // console.log('-----', persistor)
 
