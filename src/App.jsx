@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // import reactLogo from './assets/react.svg'
@@ -14,9 +14,11 @@ function App() {
   return (
     <>
       <TopHeader/>
-        <BrowserRouter>
+      /{ import.meta.env.VITE_TEST_DATA }/
+        <BrowserRouter
+          basename={import.meta.env.DEV ? '/iam' : '/iam'}>
           <Routes>
-            <Route path="/" element={<Bpp/>} />
+            <Route path="" element={<Bpp/>} />
             <Route path="/board/*" element={<Board/>} />
           </Routes>
         </BrowserRouter>

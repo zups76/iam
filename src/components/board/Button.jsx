@@ -39,7 +39,8 @@ function App() {
       navigate('./detail');
   };
   const goDelete = () => {
-      navigate('./detail');
+    alert('Delete')
+      // navigate('./detail');
   };
 
   // const mapStateToProps = state => ({
